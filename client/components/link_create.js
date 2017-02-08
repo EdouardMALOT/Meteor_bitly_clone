@@ -22,12 +22,14 @@ class LinkCreate extends React.Component{
     render() {
         return(
             <form onSubmit={this.submitHandler.bind(this)}>
+                    <div style={{height:30}}></div>
                     <div className="form-group">
                         <label>Link to shorten</label>
                         <input ref="input" className="form-control" />
                     </div>
                     <div className="text-danger">{this.state.error}</div>
                     <button className="btn btn-primary">Shorten!</button>
+                    <div style={{height:50}}></div>
             </form>
         );
     }

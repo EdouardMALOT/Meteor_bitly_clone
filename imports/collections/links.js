@@ -11,7 +11,7 @@ Meteor.methods({
         const token = Math.random().toString(36).slice(-5);
 
         //Save it into MongoDB
-        Links.insert({url, token, clicks: 0});
+        Links.insert({url, token, clicks: 0, lastUpdate: "Not yet"});
         console.log("New linked added");
     }
 });
