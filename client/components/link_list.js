@@ -16,7 +16,7 @@ class LinkList extends React.Component {
             return(
                 <tr key={token}>
                     <td>{url}</td>
-                    <td><a href={shortLink}>shortLink</a></td>
+                    <td><a href={shortLink}>{shortLink}</a></td>
                     <td>{clicks}</td>
                 </tr>
             );
