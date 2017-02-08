@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './components/header'
+import LinkCreate from './components/link_create'
+import { Link } from '../imports/collections/links';
 
 const App = () => {
   return(
-    <h1>Hello there</h1>
+    <div>
+        <Header />
+        <LinkCreate />
+    </div>
   ); 
 };
 
